@@ -13,3 +13,11 @@ localhost is the hostname and 5672 is the port number. Localhost means it is run
 ![alt text](slowSubscriber.png)
 
 There is an increase of message queue (15 message queue). That's because the publisher publishes multiple messages in a short time, so it had to be queued.
+
+- Three Subscribers
+
+![alt text](threeSubscribers.png)
+
+![alt text](threeSubscribersRabbitMQ.png)
+
+From the console it can be seen that the subscribers receives different data when the publisher publishes a lot of data. The spike from reduces quicker because there are more instances of subscribers, so thus the queue reduces.
