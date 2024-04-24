@@ -7,3 +7,9 @@ b. What it means? guest:guest@localhost:5672, what is the first guest, and what 
 guest:guest@localhost:5672 is the credential for the connection of AMQP server.
 The first guest in guest:guest is the username, and the second guest is the password
 localhost is the hostname and 5672 is the port number. Localhost means it is running on local machine.
+
+- Slow subscriber
+
+![alt text](slowSubscriber.png)
+
+There is an increase of message queue (15 message queue). That's because the publisher publishes multiple messages in a short time, so it had to be queued.
